@@ -1,0 +1,29 @@
+27 binarnie to 11011
+dzelenie liczby binarnej prze 2 to przesuwamy kropkę w lewo
+11011/2=1101.1
+
+"""
+#zamiana liczby dziesitnej na binarn
+def konwersja_na_binarne(x):
+  x=int(input("podaj x"))
+  while(x>0):
+    dw=""
+    dw=str(x%2)+dw
+    x=x//2
+  return dw
+"""
+"""
+uamki binarne
+0,625=0.101
+"""
+#zaniana uamka na liczbe binarn
+import math
+#x=float(input("podaj x"))
+def ulame_na_bin(x):
+  dw=""
+  while(0<x and x<1):
+    y=x*2
+    dw=dw+str(math.floor(y))
+    x=y-math.floor(y)
+  return "0."+dw
+print(ulame_na_bin(0.625))
